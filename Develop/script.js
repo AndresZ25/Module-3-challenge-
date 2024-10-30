@@ -11,7 +11,7 @@ const collectEmployees = function() {
   while (addMore){
     const firstName = prompt('Enter the employee first name:')
     const lastName = prompt('Enter the employee last name:')
-    let salary = prompt('Enter the employees salary')
+    let salary = prompt('Enter the employee salary')
 
     salary = parseFloat(salary);
     if (isNaN(salary)){
@@ -45,9 +45,8 @@ for(let i = 0; i < employeesArray.length; i++){
 
 const averageSalary =totalSalary / employeesArray.length;
 
-console.log('Average salary: $${averageSalary.toFixed(2)}');
-console.log('Total salary: ${employeeArray.length}');
-
+console.log(`the average employee salary: $${averageSalary.toFixed(2)}`);                                  
+console.log(`Total salary: ${employeesArray.length}`);
 
 }
 
